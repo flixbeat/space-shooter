@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/meteor_explosion.mp3-ce1659bac61b340c061f50aa1a12db0d.mp3str"
+
+[deps]
+
+source_file="res://sfx/meteor_explosion.mp3"
+dest_files=[ "res://.import/meteor_explosion.mp3-ce1659bac61b340c061f50aa1a12db0d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

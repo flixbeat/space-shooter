@@ -1,0 +1,45 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://scripts/Player.cs" type="Script" id=1]
+[ext_resource path="res://assets/PNG/playerShip1_blue.png" type="Texture" id=2]
+[ext_resource path="res://assets/Bonus/sfx_laser2.ogg" type="AudioStream" id=3]
+[ext_resource path="res://scenes/Explode.tscn" type="PackedScene" id=4]
+[ext_resource path="res://sfx/player_explosion.ogg" type="AudioStream" id=5]
+[ext_resource path="res://scenes/Lasers/LaserIV.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/Lasers/LaserII.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/Lasers/Laser.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/Lasers/LaserIII.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/Lasers/LaserV.tscn" type="PackedScene" id=10]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 51.0618
+
+[node name="Player" type="Sprite"]
+position = Vector2( 200, 728 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+moveSpeed = 250.0
+laserScenes = [ ExtResource( 8 ), ExtResource( 7 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 10 ) ]
+
+[node name="Muzzle" type="Node2D" parent="."]
+position = Vector2( 0, -60.0001 )
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_mask = 28
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 1 )
+
+[node name="TimerDestroy" type="Timer" parent="."]
+
+[node name="Explode" parent="." instance=ExtResource( 4 )]
+visible = false
+position = Vector2( 0, 0 )
+scale = Vector2( 0.819005, 0.819005 )
+
+[node name="SfxShoot" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="SfxExplode" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )

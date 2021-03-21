@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Space Shooter", "Space Shooter.csproj", "{BDF16DA8-9E66-4891-8F85-FA979CC8B00E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		ExportDebug|Any CPU = ExportDebug|Any CPU
+		ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDF16DA8-9E66-4891-8F85-FA979CC8B00E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDF16DA8-9E66-4891-8F85-FA979CC8B00E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDF16DA8-9E66-4891-8F85-FA979CC8B00E}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{BDF16DA8-9E66-4891-8F85-FA979CC8B00E}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{BDF16DA8-9E66-4891-8F85-FA979CC8B00E}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{BDF16DA8-9E66-4891-8F85-FA979CC8B00E}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4B7A2E0-2995-492B-BD8A-F5651C925D50}
+	EndGlobalSection
+EndGlobal
